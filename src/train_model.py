@@ -41,7 +41,6 @@ def train_spam_model():
   os.makedirs('model', exist_ok=True)
 
   # Load the spam dataset (you'll need to download this)
-  # Sample dataset: https://archive.ics.uci.edu/ml/datasets/SMS+Spam+Collection
   df = pd.read_csv('data/spam.csv', encoding='latin-1')
   df = df.rename(columns={'v1': 'label', 'v2': 'text'})
 
