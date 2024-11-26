@@ -1,13 +1,18 @@
-
 import streamlit as st
 import pandas as pd
 import joblib
-from train_model import preprocess_text
 import os
 import sys
 
-# Add the src directory to the system path
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
+
+# الحصول على المسار الكامل لمجلد src
+src_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../src'))
+
+# إضافة المسار إلى sys.path
+if src_path not in sys.path:
+    sys.path.append(src_path)
+
+from train_model import preprocess_text
 
 
 def load_model():

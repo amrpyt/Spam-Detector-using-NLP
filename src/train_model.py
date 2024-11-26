@@ -73,8 +73,9 @@ def train_spam_model():
   print(classification_report(y_test, y_pred))
 
   # Save the model and vectorizer
-  joblib.dump(model, 'model/spam_model.pkl')
-  joblib.dump(vectorizer, 'model/vectorizer.pkl')
+  os.makedirs("model", exist_ok=True)
+  joblib.dump(model, 'model/spam_model.joblib')
+  joblib.dump(vectorizer, 'model/vectorizer.joblib')
 
   print("\nModel and vectorizer saved successfully!")
 
