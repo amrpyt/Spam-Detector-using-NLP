@@ -1,13 +1,19 @@
+
 import streamlit as st
 import pandas as pd
 import joblib
 from train_model import preprocess_text
 import os
+import sys
+
+# Add the src directory to the system path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
+
 
 def load_model():
   try:
-      model = joblib.load('model/spam_model.pkl')
-      vectorizer = joblib.load('model/vectorizer.pkl')
+      model = joblib.load('model/spam_model.joblib')
+      vectorizer = joblib.load('model/vectorizer.joblib')
       return model, vectorizer
   except FileNotFoundError:
       st.error("Model files not found. Please train the model first.")
