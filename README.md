@@ -31,6 +31,14 @@ spam_detector/
 
 ---
 
+## **Dataset**
+This project uses the **SMS Spam Collection Dataset**, which is available on Kaggle. You can download the dataset from the following link:
+**[SMS Spam Collection Dataset - Kaggle](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset?resource=download)**
+
+Save the dataset as `spam.csv` in the `data/` directory.
+
+---
+
 ## **Setup and Installation**
 
 ### **1. Clone the Repository**
@@ -139,7 +147,7 @@ We welcome contributions to enhance this project. Feel free to:
 ---
 
 ## **Credits**
-- **Made with ❤️ by [Amr Alkhouli](https://github.com/your_username)**
+- **Made with ❤️ by [Amr Alkhouli](https://github.com/amrpyt)**
 
 ---
 
