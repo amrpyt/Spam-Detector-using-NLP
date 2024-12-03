@@ -1,3 +1,4 @@
+![image](https://github.com/user-attachments/assets/c1f1c827-49de-4476-adb2-f60da83d2dcb)![image](https://github.com/user-attachments/assets/67123cc6-2c4d-40ba-9e21-fa2250b45146)
 # Spam Detector Using NLP
 
 This project demonstrates how to build an intelligent system to classify emails as **“Spam”** or **“Not Spam”** using Machine Learning and Natural Language Processing (NLP). It’s structured as a comprehensive guide for students to understand and implement such a system step-by-step.
@@ -41,9 +42,17 @@ This process involves:
 Before training the model, we need to clean the raw text. This step ensures that the text is in a consistent and machine-readable format:
 
 1. **Lowercasing**: Convert all characters to lowercase for uniformity.
+
+
 2. **Removing Special Characters**: Eliminate symbols, numbers, and extra spaces.
-3. **Stopword Removal**: Remove common words like “is”, “the”, “and” using libraries like NLTK.
+
+
+3. **Stopword Removal**: Remove common words like “is”, “the”, “and” using libraries like NLTK. ![image](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Stop-word-removal-using-NLTK.png)
+
+
 4. **Lemmatization**: Reduce words to their base form (e.g., “running” → “run”).
+   ![image](https://github.com/user-attachments/assets/71a3962f-d2f5-4a1d-b2eb-b47e233148ce)
+
 
 **Why is preprocessing important?**
 
